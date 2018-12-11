@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="414.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="control.ControllerAnchorPaneRelatorioProduto">
+   <children>
+      <TableView fx:id="tableViewProdutos" layoutX="39.0" layoutY="58.0" prefHeight="359.0" prefWidth="600.0" AnchorPane.bottomAnchor="41.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colunaCodigo" prefWidth="59.0" text="Código" />
+          <TableColumn fx:id="colunaNome" prefWidth="336.0" text="Nome" />
+            <TableColumn fx:id="colunaPreco" minWidth="0.0" prefWidth="63.0" text="Preço" />
+            <TableColumn fx:id="ColunaQuantidade" prefWidth="141.0" text="Quantidade" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnImprimir" layoutX="517.0" layoutY="375.0" mnemonicParsing="false" onAction="#acaoBtnImprimir" text="Imprimir" />
+   </children>
+</AnchorPane>
